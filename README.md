@@ -1,5 +1,23 @@
+### Summary: Setting up Apache Airflow Locally Using Astro
 
-Step-by-Step Guide: Setting up Apache Airflow Locally with Astro
+You recently set up Apache Airflow locally using **Astro** (Astronomer’s CLI) on your MacBook. Here's a summary of the steps you followed, the issues you encountered, and how you resolved them.
+
+### 1. **Initial Setup of Airflow Using Astro**
+   You set up **Apache Airflow** locally using Astro by following these steps:
+   - Installed the Astro CLI to manage Airflow.
+   - Started the Astro project, which automatically pulled the necessary Docker images and launched the Airflow environment.
+
+### 2. **Issues and Resolutions**
+   - **Issue:** Unable to log in with default credentials on the Airflow UI.
+     - **Resolution:** Initially, you faced login issues because Airflow didn’t have authentication configured. You set up basic authentication by creating an admin user using the Astro CLI.
+   
+   - **Issue:** Airflow containers not running.
+     - **Resolution:** After running the command `astro dev run`, you received an error indicating that the container wasn’t running. The issue was resolved by starting the environment with `astro dev start`.
+
+   - **Issue:** Problem running the `airflow users create` command.
+     - **Resolution:** The command for creating an admin user was initially incorrect. After correcting it, you successfully created the admin account.
+
+### Step-by-Step Guide: Setting up Apache Airflow Locally with Astro
 
 Here’s a detailed guide on how you can set up Apache Airflow locally using Astro, including Docker installation, and how to troubleshoot potential issues.
 

@@ -1,4 +1,4 @@
-
+### I'm using Astro instead of `pip install` for setting up Airflow because Astro simplifies and automates the setup process with pre-configured Docker environments. This ensures a consistent and reliable configuration, mirrors production setups, and provides robust development features. Astro's streamlined approach saves time and reduces setup complexity compared to manual installation with `pip`.
 
 ### Step-by-Step Guide: Setting up Apache Airflow Locally with Astro
 

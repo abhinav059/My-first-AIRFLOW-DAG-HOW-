@@ -5,7 +5,7 @@ from datetime import datetime
 # Default arguments for the DAG
 default_args = {
     'owner': 'airflow',
-    'start_date': datetime(2024, 9, 16),  # set a recent start date
+    'start_date': datetime(2024, 9, 16),   start date
     'retries': 1,
 }
 
@@ -28,5 +28,7 @@ hello_task = PythonOperator(
     dag=dag,  # Pass the DAG instance
 )
 
+            
+
 # Task dependencies (for more complex DAGs)
-hello_task  # This is a single task DAG, no dependencies
+hello_task  # This is a single task DAG so no dependencies
